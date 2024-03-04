@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Open+Sans&family=Poppins:wght@200;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 15px; */
+}
+
+body {
+  background-color: #f7f6f2;
+}
+
+p {
+  font-size: 13px;
+}
+
+img {
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ------------ HOME PAGE */
+
+/* container containing Project list */
+.project-container {
+  width: 85%;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  /* border-radius: 20px 20px 0px 0px; */
+  justify-content: center;
+  background-color: #cbc8c3a1;
+}
+
+/* the list of Projects displayed */
+#project-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 8px;
+  row-gap: 10px;
+  /* width: 70%; */
+}
+
+/* ---------- PROJECT PAGE */
+
+/* Containing inner box */
+.outer-box {
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border: 3px solid #c6e2ff; */
+  /* padding: 50px; */
+}
+/* Containing Img/Text & Pledges/Pledge Form */
+.inner-box {
+  /* max-height: 400px; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image in Project Page  */
+.project-img {
+  margin: auto;
+  margin-right: 20px;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Project description */
+.project-text {
+  padding: 30px;
+  margin: 30px;
+  margin-left: 0;
+  /* background-color: white; */
+  /* border-top: solid 1px rgba(0, 0, 0, 0.097); */
+  border-bottom: solid 1px rgba(0, 0, 0, 0.097);
+  /* background-color: #46cece26; */
+  width: 600px;
+  /* border-radius: 20px; */
+}
+
+.pledge-box {
+  display: flex;
+  justify-content: center;
+  /* width: 200px; */
+  margin: auto;
+}
+
+.pledge-form {
+  /* display: flex; */
+  width: 100%;
+}
+
+/* div for the List of Pledges */
+.pledge-list {
+  margin: auto;
+  /* width: 100%; */
+  height: 300px;
+  list-style-type: none;
+  overflow: scroll;
+  margin-right: 50px;
+}
+
+/* The individual Pledge comments */
+.pledge-blocks {
+  background-color: #bab2a7a8;
+  font-size: 13px;
+  /* margin: auto; */
+  width: 400px;
+  /* height: 40px; */
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  padding-left: 40px;
+  border-radius: 10px;
+  border-radius: 20px 20px 20px 0px;
+  /* border-bottom: solid 1px rgba(0, 0, 0, 0.188); */
+}
+
+.text-section {
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+  height: 350px;
+  width: 50%;
+  margin: auto;
+}
+
+/* ------------------ MEDIA QUERIES */
+
+@media screen and (max-width: 1260px) {
+  /* ----- div for the List of Pledges */
+  .pledge-blocks {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .pledge-form {
+    margin-left: 30px;
+  }
+}
+
+/* @media screen and (max-width: 1120px) {
+
+} */
+
+@media screen and (max-width: 1180px) {
+  .project-img {
+    display: flex;
+    margin: auto;
+    padding: 0;
+  }
+
+  .pledge-box {
+    display: block;
+  }
+
+  .pledge-blocks {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+
+  .project-text {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+  }
+  /* ----- the containers to separate project & pledges sections */
+  .inner-box {
+    display: block;
+    align-content: center;
+    /* justify-content: center; */
+    margin: auto;
+  }
+}
+
+/*------ MEDIA QUERIES ------*/
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .pledge-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pledge-blocks {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  #project-list {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .pledge-list {
+    width: 100%;
+    margin: auto;
+  }
+
+  .project-form { */
+/* width: 100%; */
+/* margin: auto;
+    margin-top: 20px;
+  }
+
+  .project-button {
+    width: 80%;
+  }
+
+  form div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+  }
+} */
